@@ -1,72 +1,57 @@
-<h1 align="center">RETO MS -200MB (Completado con un peso de 26MB aprox.)
-</h1>
-<!-- Encabezado -->
-<h1 align="center">Dockerfile para Microservicio</h1>
+<h1 align="center">Blockchain Demo en Python</h1>
 
-<!-- Advertencia con Imagen -->
 <p align="center">
-  <img src="https://github.com/tandpfun/skill-icons/raw/main/icons/Docker.svg" alt="Docker" width="100">
+  <img src="https://media0.giphy.com/media/KAq5w47R9rmTuvWOWa/giphy.gif">
 </p>
 
-> **¡Importante!** No es necesario realizar un <code>git clone</code> de este repositorio. El Dockerfile se encarga de la clonación automática. Simplemente sigue las instrucciones una vez que hayas descargado el archivo de la rama [Dockerfile](https://github.com/AngeloLaMadrid/MicroServicio/tree/Dockerfile).</p>
+<!-- Encabezado -->
+<h1 align="center">Proyecto en Python</h1>
+
+
 
 <!-- Descripción -->
-## Descripción
+## Descripción 
 
-🚀 Como parte de un desafío, se me encomendó la tarea de `construir un microservicio que pesara menos de 200 MB`, y puedo afirmar que he superado este reto logrando una imagen de Docker de tan solo `26 MB` aproximadamente.
+🚀 Demostración de una blockchain simple en Python
 
-🐳 Este Dockerfile está diseñado para crear una imagen de Docker que ejecute un servicio en el sistema operativo `Alpine 3.18`, la configuración de la imagen incluye `Python` 🐍 o `Java` ☕️ (según el archivo descargado), así como también `curl`, además, realiza la clonación automatica a una de mis ramas dentro del contenedor, con el fin de ahorrar pasos extras para el usuario.
+🐳 Usa hashlib para calcular los hashes 
 
-✨ Esta tarea se ha completado con éxito y el resultado es un microservicio extremadamente ligero y eficiente.
+✨ Permite registrar transacciones entre usuarios
 
 ## 📁 Contenido
 
 El repositorio contiene los siguientes archivos:
 
-- `Dockerfile`: Archivo Dockerfile para construir la imagen
-- `requirements.txt`: Dependencias de Python necesarias
-- `Angelo-Microservicio.py`: Código fuente del microservicio en Python
+- `ejemplo.py`: Código fuente en Python
 
 ## 🛠 Requisitos
 
-- `Docker`
-- `Python` o `Java` (Dependiendo del archivo)
+- `Python 3`
+- `hashlib`
+
+## 📥 Clonar el repositorio
+```bash
+git clone https://github.com/AngeloLaMadrid/BlockchainPythonDemo.git
+```
 
 ## 💻 Instrucciones de Uso
 
-Antes de comenzar, asegúrate de haber descargado el Dockerfile desde la rama "Dockerfile" del repositorio principal utilizando la siguiente URL: [Descargar Dockerfile](https://github.com/AngeloLaMadrid/MicroServicio/tree/Dockerfile).
+1. Asegúrate de tener Python 3 instalado.
+2. Clona el repositorio y navega hasta su directorio.
+3. Ejecuta `python ejemplo.py` en la terminal.
+4. Elige usuarios para *enviar* y *recibir* SOL COINs.
+5. Ingresa la cantidad de SOL COINs.
+6. Confirma la transacción con '`S`' o cancela con '`N`'.
+7. Se registrarán las transacciones en el **blockchain**.
+8. Para terminar, escribe '`N`' cuando se te solicite.
+9. Se mostrará el historial de transacciones al final.
 
-Para construir la imagen Docker, sigue estos pasos:
 
-1. Asegúrate de estar en el mismo directorio que el Dockerfile.
 
-2. Abre una terminal o línea de comandos.
-
-3. Ejecuta el siguiente comando para construir la imagen:
-
-   ```bash
-   docker build -t 02_angelo_microservicio .
-   
-4. Utiliza este comando para crear y ejecutar el contenedor basado en la imagen:
-
-   ```bash
-   docker run -it --name 02_angelo_microservicio_contenedor 02_angelo_microservicio
-   
-5. Realizar la consulta con:
-   
-   ```bash
-   curl http://localhost:8080
-
-## 📥 Clonar el repositorio
-
-```bash
-git clone https://github.com/AngeloLaMadrid/MicroServicio.git
-```
 
 ## ✨ Importancia
 
-Este repositorio sirve como ejemplo de cómo dockerizar un microservicio sencillo en Python.
+Este proyecto demuestra los conceptos básicos de una blockchain y cómo implementarla en Python.
 
 ## 📝 Licencia
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
-
